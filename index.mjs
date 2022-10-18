@@ -10,7 +10,6 @@ http.createServer((req, res) => {
   (myURL.pathname === '/') ? fileName = `index` : fileName = myURL.pathname;
 
   fs.readFile(`./${fileName}.html`, (err, data) => {
-
     if (err) {
       res.writeHead(404, { "Content-Type": "text/html" });
       res.write(

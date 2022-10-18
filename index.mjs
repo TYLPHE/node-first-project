@@ -4,7 +4,7 @@ import * as fs from 'node:fs';
 const hostName = 'localhost';
 const port = 8080;
 
-const server = http.createServer((req, res) => {
+http.createServer((req, res) => {
   const myURL = new URL(req.url, `http://${hostName}:${port}/`);  
   let fileName = '';
   (myURL.pathname === '/') ? fileName = `index` : fileName = myURL.pathname;
@@ -26,8 +26,4 @@ const server = http.createServer((req, res) => {
       return res.end();
     }
   });
-})
-
-server.listen(port, hostName, () => {
-  console.log(`Server running at http://${hostName}:${port}/`)
-})
+}).listen(port);

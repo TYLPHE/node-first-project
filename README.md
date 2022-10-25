@@ -2,7 +2,7 @@
 A basic informational site using node.js
 
 ## Update
-This repo was [updated to express as assigned here](https://www.theodinproject.com/lessons/nodejs-introduction-to-express). [The previous assignment](https://www.theodinproject.com/lessons/nodejs-basic-informational-site) used the following javascript (I placed the old node file in /public/javascripts/):
+This repo was [updated to express as assigned here](https://www.theodinproject.com/lessons/nodejs-introduction-to-express). [The previous assignment](https://www.theodinproject.com/lessons/nodejs-basic-informational-site) used the following javascript (I placed the old node file in /routes/ and renamed it oldIndex.mjs):
 
 This file is renamed from a `.js` file to a `.mjs` file to give it the ability to `import` node instead of `require` it. 
 
